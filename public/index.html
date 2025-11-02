@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Gemini Chat</h1>
+        <p>Talk with Google's Gemini model in real-time.</p>
+      </header>
+      <main>
+        <section id="chat" aria-live="polite"></section>
+      </main>
+      <form id="chat-form" autocomplete="off">
+        <label class="sr-only" for="prompt">Your message</label>
+        <textarea
+          id="prompt"
+          name="prompt"
+          rows="2"
+          placeholder="Ask Gemini anything..."
+          required
+        ></textarea>
+        <button type="submit" id="send-btn">Send</button>
+      </form>
+    </div>
+    <template id="message-template">
+      <div class="message">
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="bubble"></div>
+      </div>
+    </template>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
