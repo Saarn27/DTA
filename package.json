@@ -1,0 +1,16 @@
+{
+  "name": "gemini-chat-app",
+  "version": "1.0.0",
+  "description": "A simple AI chat web app powered by the Gemini API.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.js",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^0.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
